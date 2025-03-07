@@ -9,8 +9,23 @@
   </head>
   <body>
     <h1>図書館</h1> 
-    <h2>Check the console using Ctrl+shift+i</h2>
+    <button id="newBookBtn">New Button</button>
+
+    <dialog id="bookFormDialog">
+      <form id="bookForm">
+        <h2>Add New Book</h2> 
+
+        <label>Title: <input type="text" id="title" require></label><br>
+        <label>Author: <input type="text" id="author" require></label><br>
+        <label>Pages: <input type="text" id="pages" require></label><br>
+        <label>Read: <input type="checkbox" id="read" require></label><br>
+
+        <button type="submit">Add Book</button>
+        <button type="button" id="closeFormBtn">Cancel</button>
+      </form>
+    </dialog>
 
     <div id="books"></div>
+    
   </body>
 </html>
