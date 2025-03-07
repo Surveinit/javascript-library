@@ -19,7 +19,7 @@ function addBookToLibrary(title, author, pages, read) {
 
 function displayBooks() {
   const booksContainer = document.getElementById("books");
-  booksContainer.innerText = "";
+  booksContainer.innerHTML= "";
 
   myLibrary.forEach((book) => {
     const card = document.createElement("div");
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const title = document.getElementById("title").value;
     const author = document.getElementById("author").value;
     const pages = document.getElementById("pages").value;
-    const read = document.getElementById("read").value;
+    const read = document.getElementById("read").checked;
     
     form.reset();
     addBookToLibrary(title, author, pages, read);
